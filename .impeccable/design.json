@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-26T12:00:00Z",
+  "title": "Design System: Ronald Ruiz · Personal trainer",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Negro Cabina",
+        "canonical": "#0d0c0c",
+        "tonalRamp": [
+          "#050505",
+          "#0d0c0c",
+          "#1a1818",
+          "#2c2828",
+          "#4a4545",
+          "#7a7474",
+          "#b0aaaa",
+          "#e6e2e2"
+        ]
+      },
+      "grille": {
+        "role": "neutral",
+        "displayName": "Rejilla",
+        "canonical": "#110f0f",
+        "tonalRamp": [
+          "#070606",
+          "#110f0f",
+          "#1e1b1b",
+          "#302b2b",
+          "#4d4747",
+          "#7c7575",
+          "#b1abab",
+          "#e7e3e3"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel",
+        "canonical": "#1e1b1b",
+        "tonalRamp": [
+          "#0d0c0c",
+          "#161313",
+          "#1e1b1b",
+          "#2b2727",
+          "#403a3a",
+          "#6b6563",
+          "#a39d9b",
+          "#dcd7d5"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Filete",
+        "canonical": "#332e2e",
+        "tonalRamp": [
+          "#141212",
+          "#221e1e",
+          "#332e2e",
+          "#403a3a",
+          "#5d5757",
+          "#8d8684",
+          "#b8b2b0",
+          "#e6e2e0"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Hueso",
+        "canonical": "#f3f4f6",
+        "tonalRamp": [
+          "#1c1d20",
+          "#3a3c40",
+          "#5c5f64",
+          "#80838a",
+          "#a6a9ae",
+          "#c9cbcf",
+          "#e4e6e9",
+          "#f3f4f6"
+        ]
+      },
+      "bone-soft": {
+        "role": "neutral",
+        "displayName": "Hueso Suave",
+        "canonical": "#d4cfcd",
+        "tonalRamp": [
+          "#221f1e",
+          "#3e3a39",
+          "#5e5957",
+          "#807a78",
+          "#a39d9b",
+          "#c3bcba",
+          "#d4cfcd",
+          "#f1eeed"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Gris Parlante",
+        "canonical": "#b8b2b0",
+        "tonalRamp": [
+          "#1f1c1b",
+          "#3a3635",
+          "#57524f",
+          "#6b6563",
+          "#8d8684",
+          "#b8b2b0",
+          "#d9d4d2",
+          "#f0edec"
+        ]
+      },
+      "red": {
+        "role": "primary",
+        "displayName": "Rojo Picó",
+        "canonical": "#ff2a2a",
+        "tonalRamp": [
+          "#3a0406",
+          "#5e0a10",
+          "#a8101a",
+          "#d6161f",
+          "#ff2a2a",
+          "#ff4747",
+          "#ff7a6e",
+          "#ffd0cc"
+        ]
+      },
+      "red-hot": {
+        "role": "primary",
+        "displayName": "Rojo Encendido",
+        "canonical": "#ff4747",
+        "tonalRamp": [
+          "#3a0406",
+          "#5e0a10",
+          "#a8101a",
+          "#ff2a2a",
+          "#ff4747",
+          "#ff7a6e",
+          "#ffa8a0",
+          "#ffe0dd"
+        ]
+      },
+      "red-deep": {
+        "role": "primary",
+        "displayName": "Rojo Hondo",
+        "canonical": "#a8101a",
+        "tonalRamp": [
+          "#22020a",
+          "#3a0406",
+          "#5e0a10",
+          "#840c15",
+          "#a8101a",
+          "#d6161f",
+          "#ff4747",
+          "#ffb3ae"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display · Adventor 700",
+        "purpose": "Solo el nombre: RONALD en hueso, RUIZ en rojo, tinta plana; 17vw en móvil."
+      },
+      "headline": {
+        "displayName": "Headline · Adventor 700",
+        "purpose": "Títulos de sección en hueso con la frase de apoyo en Adventor 400 gris; el cierre sube a clamp(2.6rem, 8.5vw, 7rem)."
+      },
+      "title": {
+        "displayName": "Title · Adventor 700",
+        "purpose": "Nombres de plan y títulos de logro (1.85rem); lemas a +0.02em, monograma a -0.03em."
+      },
+      "body": {
+        "displayName": "Body · Barlow",
+        "purpose": "Lectura; medidas de 34rem a 60ch."
+      },
+      "label": {
+        "displayName": "Label · Barlow Condensed",
+        "purpose": "Navegación, botones, placas, etiquetas; mayúsculas con tracking 0.04 a 0.16em, más tracking cuanto más pequeña."
+      }
+    },
+    "materials": [
+      {
+        "name": "bolt",
+        "value": "radial-gradient(circle at 35% 35%, #ffffff 0 18%, #9aa0a8 45%, #33373c 100%)",
+        "purpose": "Tornillos metálicos de 8px en placas y esquinas del marco (hardware, nunca texto)."
+      },
+      {
+        "name": "grille-dots",
+        "value": "radial-gradient(circle, rgb(255 255 255 / 0.05) 1.2px, transparent 1.7px) 0 0 / 9px 9px",
+        "purpose": "Trama de rejilla de parlante bajo los planes (8px en el cuerpo del chat)."
+      },
+      {
+        "name": "panel-gradient",
+        "value": "linear-gradient(180deg, #211e1e, #181515)",
+        "purpose": "Superficie de tarjeta de plan."
+      }
+    ],
+    "shadows": [
+      {
+        "name": "cabinet-drop",
+        "value": "0 24px 40px -32px #000",
+        "purpose": "Caída de tarjetas de plan."
+      },
+      {
+        "name": "cabinet-drop-long",
+        "value": "0 40px 70px -35px #000",
+        "purpose": "Marco de retrato y banners grandes."
+      },
+      {
+        "name": "bolted-plate",
+        "value": "inset 0 1px 0 rgb(255 255 255 / 0.08), 0 10px 24px -10px rgb(0 0 0 / 0.9)",
+        "purpose": "Placas y marcos metálicos."
+      },
+      {
+        "name": "strip-drop",
+        "value": "0 20px 40px -18px rgb(0 0 0 / 0.95)",
+        "purpose": "Franja de lemas sobre el hero."
+      },
+      {
+        "name": "whatsapp-halo",
+        "value": "0 10px 24px -10px rgb(255 42 42 / 0.45)",
+        "purpose": "Botón rojo de WhatsApp en la barra."
+      },
+      {
+        "name": "whatsapp-fab",
+        "value": "0 14px 30px -10px rgb(255 42 42 / 0.7), 0 4px 10px rgb(0 0 0 / 0.5)",
+        "purpose": "Botón flotante del chat."
+      },
+      {
+        "name": "plan-featured",
+        "value": "0 0 0 1px rgb(255 42 42 / 0.2), 0 28px 60px -34px rgb(255 42 42 / 0.55)",
+        "purpose": "Plan recomendado, cuya acción es WhatsApp en reposo."
+      },
+      {
+        "name": "chat-panel",
+        "value": "0 30px 70px -20px rgb(0 0 0 / 0.95)",
+        "purpose": "Panel flotante del chat."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Easing por defecto de transiciones y entradas."
+      },
+      {
+        "name": "barrido",
+        "value": "1.1s ease-out, clip-path inset de derecha a izquierda",
+        "purpose": "El nombre se revela una vez al cargar; RUIZ 0.12s después."
+      },
+      {
+        "name": "bajo",
+        "value": "1.8s ease-out infinite, escala 1 → 1.11 → 0.97 → 1",
+        "purpose": "Latido del núcleo del cono; 0.9s en hover."
+      },
+      {
+        "name": "onda",
+        "value": "1.8s ease-out infinite, aro rojo escala 1 → 1.4 y se desvanece",
+        "purpose": "Onda del cono y del botón flotante (2.4s con 1s de retardo)."
+      },
+      {
+        "name": "marquesina",
+        "value": "42s linear infinite, translateX(-50%)",
+        "purpose": "Franja de lemas."
+      },
+      {
+        "name": "aparece",
+        "value": "0.4s ease-out, desde opacidad 0, translateY(6px) scale(0.96)",
+        "purpose": "Burbujas y globo de invitación del chat."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation/transition 0.01ms, una iteración",
+        "purpose": "Todo se detiene con prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stack",
+        "value": "960px"
+      },
+      {
+        "name": "mobile",
+        "value": "759px"
+      }
+    ],
+    "fonts": [
+      {
+        "name": "Adventor",
+        "source": "TeX Gyre Adventor (clon libre de Avant Garde Gothic), autoalojada: /fonts/texgyreadventor-regular.otf (400), /fonts/texgyreadventor-bold.otf (700)"
+      },
+      {
+        "name": "Barlow",
+        "source": "@fontsource/barlow 400/500/600"
+      },
+      {
+        "name": "Barlow Condensed",
+        "source": "@fontsource/barlow-condensed 600/700"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "WhatsApp Button",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "Píldora roja con ícono de WhatsApp; la acción de la barra.",
+      "html": "<button class=\"ds-btn-wa\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z\"/></svg><span>Escríbeme</span></button>",
+      "css": ".ds-btn-wa { display: inline-flex; align-items: center; gap: 0.5rem; background: #ff2a2a; color: #fff; border: 0; border-radius: 999px; padding: 0.6rem 1.15rem; font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; box-shadow: 0 10px 24px -10px rgb(255 42 42 / 0.45); transition: background 0.2s, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-wa svg { width: 1.15rem; height: 1.15rem; } .ds-btn-wa:hover { background: #ff4747; transform: translateY(-1px); } .ds-btn-wa:focus-visible { outline: 2px solid #ff2a2a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Cone Button",
+      "kind": "custom",
+      "refersTo": "button-cone",
+      "description": "Parlante que late: la acción principal de hero y cierre, abre el chat de WhatsApp.",
+      "html": "<button class=\"ds-cone-cta\"><span class=\"ds-cone\"><span class=\"ds-cone-dust\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z\"/></svg></span></span><span class=\"ds-cone-label\">Escríbeme por WhatsApp</span></button>",
+      "css": ".ds-cone-cta { display: inline-flex; align-items: center; gap: 1.1rem; padding: 0; background: none; border: 0; cursor: pointer; } .ds-cone { position: relative; display: grid; place-items: center; width: 84px; height: 84px; border-radius: 50%; background: radial-gradient(circle, #1d1a1a 0 58%, #000 59% 62%, #4d4848 63% 66%, #141212 67% 100%); box-shadow: 0 0 0 2px #5d5757, 0 0 0 5px #1a1717, 0 0 0 6px #3d3838, 0 16px 30px -10px rgb(0 0 0 / 0.9); } .ds-cone::after { content: ''; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid #ff2a2a; opacity: 0; animation: ds-onda 1.8s ease-out infinite; } .ds-cone-dust { display: grid; place-items: center; width: 58%; height: 58%; border-radius: 50%; color: #fff; background: radial-gradient(circle at 36% 30%, #ff7a6e, #ff2a2a 45%, #a8101a 100%); box-shadow: 0 0 22px rgb(255 42 42 / 0.45), inset 0 -4px 8px rgb(0 0 0 / 0.35); animation: ds-bajo 1.8s cubic-bezier(0.16, 1, 0.3, 1) infinite; } .ds-cone-dust svg { width: 56%; height: 56%; } .ds-cone-label { font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-weight: 700; font-size: 1.2rem; letter-spacing: 0.08em; text-transform: uppercase; color: #f3f4f6; padding-bottom: 0.2rem; border-bottom: 2px solid #ff2a2a; transition: color 0.2s; } .ds-cone-cta:hover .ds-cone-label { color: #fff; } .ds-cone-cta:hover .ds-cone-dust, .ds-cone-cta:hover .ds-cone::after { animation-duration: 0.9s; } .ds-cone-cta:active .ds-cone-dust { transform: scale(0.94); } .ds-cone-cta:focus-visible { outline: 2px solid #ff2a2a; outline-offset: 3px; border-radius: 4px; } @keyframes ds-bajo { 0%, 40%, 100% { transform: scale(1); } 8% { transform: scale(1.11); } 20% { transform: scale(0.97); } } @keyframes ds-onda { 0% { opacity: 0.85; transform: scale(1); } 60%, 100% { opacity: 0; transform: scale(1.4); } }"
+    },
+    {
+      "name": "Plan Button",
+      "kind": "button",
+      "refersTo": "button-plan",
+      "description": "Contorno hueso que se llena de rojo en hover porque abre WhatsApp con el plan prellenado.",
+      "html": "<button class=\"ds-btn-plan\">Consultar tarifa<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-btn-plan { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.8rem 1.25rem; font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; color: #f3f4f6; background: transparent; border: 1.5px solid #f3f4f6; border-radius: 999px; cursor: pointer; transition: background 0.2s, border-color 0.2s, color 0.2s; } .ds-btn-plan svg { width: 1.1rem; height: 1.1rem; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-plan:hover { color: #fff; background: #ff2a2a; border-color: #ff2a2a; } .ds-btn-plan:hover svg { transform: translateX(3px); } .ds-btn-plan:focus-visible { outline: 2px solid #ff2a2a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Bone Button",
+      "kind": "button",
+      "refersTo": "button-bone",
+      "description": "Píldora hueso para enlaces que no son WhatsApp (aliado AETHA).",
+      "html": "<a class=\"ds-btn-bone\" href=\"#\">Comprar suplementos en AETHA<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn-bone { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.85rem 1.35rem; font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: #0d0c0c; background: #f3f4f6; border-radius: 999px; transition: background 0.2s; } .ds-btn-bone svg { width: 1.1rem; height: 1.1rem; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-bone:hover { background: #fff; } .ds-btn-bone:hover svg { transform: translateX(3px); } .ds-btn-bone:focus-visible { outline: 2px solid #f3f4f6; outline-offset: 3px; }"
+    },
+    {
+      "name": "Name Lettering",
+      "kind": "custom",
+      "description": "El nombre en Adventor 700, tinta plana: RONALD hueso, RUIZ rojo.",
+      "html": "<h1 class=\"ds-name\"><span class=\"ds-lettering\">Ronald</span><span class=\"ds-lettering ds-red\">Ruiz</span></h1>",
+      "css": ".ds-name { display: flex; flex-direction: column; align-items: flex-start; margin: 0; font-family: 'Adventor', 'Century Gothic', 'Avant Garde', sans-serif; font-weight: 700; letter-spacing: -0.02em; font-size: 5rem; line-height: 0.9; text-transform: uppercase; } .ds-lettering { display: inline-block; white-space: nowrap; color: #f3f4f6; animation: ds-barrido 1.1s cubic-bezier(0.16, 1, 0.3, 1) both; } .ds-red { color: #ff2a2a; animation-delay: 0.12s; } @keyframes ds-barrido { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }"
+    },
+    {
+      "name": "Slogan Strip",
+      "kind": "custom",
+      "refersTo": "slogan-strip",
+      "description": "Franja plana hueso girada -1.6deg con lemas Adventor en negro corriendo en marquesina.",
+      "html": "<div class=\"ds-strip\"><div class=\"ds-strip-track\"><span>Top 1 en planes personalizados<svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 1.5c.5 5.6 4.9 10 10.5 10.5-5.6.5-10 4.9-10.5 10.5C11.5 16.9 7.1 12.5 1.5 12 7.1 11.5 11.5 7.1 12 1.5Z\"/></svg></span><span>Presencial en Bogotá<svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 1.5c.5 5.6 4.9 10 10.5 10.5-5.6.5-10 4.9-10.5 10.5C11.5 16.9 7.1 12.5 1.5 12 7.1 11.5 11.5 7.1 12 1.5Z\"/></svg></span></div></div>",
+      "css": ".ds-strip { overflow: hidden; transform: rotate(-1.6deg); background: #f3f4f6; color: #0d0c0c; box-shadow: 0 20px 40px -18px rgb(0 0 0 / 0.95); } .ds-strip-track { display: flex; width: max-content; animation: ds-marquesina 42s linear infinite; } .ds-strip-track span { display: inline-flex; align-items: center; gap: 1.4rem; padding: 0.85rem 1.4rem 0.85rem 0; font-family: 'Adventor', 'Century Gothic', 'Avant Garde', sans-serif; font-weight: 700; letter-spacing: 0.02em; font-size: 1.2rem; text-transform: uppercase; white-space: nowrap; } .ds-strip-track svg { width: 0.95em; height: 0.95em; } @keyframes ds-marquesina { to { transform: translateX(-50%); } }"
+    },
+    {
+      "name": "Bolted Plaque",
+      "kind": "chip",
+      "refersTo": "plaque",
+      "description": "Placa atornillada que rotula el oficio bajo el nombre.",
+      "html": "<p class=\"ds-plaque\"><span class=\"ds-bolt\"></span>Personal trainer · Bogotá<span class=\"ds-bolt\"></span></p>",
+      "css": ".ds-plaque { display: inline-flex; align-items: center; gap: 0.75rem; margin: 0; padding: 0.55rem 0.9rem; font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: 0.16em; text-transform: uppercase; color: #f3f4f6; background: linear-gradient(180deg, #2b2727, #161313); border: 1px solid #403a3a; border-radius: 6px; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 10px 24px -10px rgb(0 0 0 / 0.9); } .ds-bolt { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ffffff 0 18%, #9aa0a8 45%, #33373c 100%); box-shadow: 0 1px 1px rgb(0 0 0 / 0.6); }"
+    },
+    {
+      "name": "Plan Row",
+      "kind": "card",
+      "refersTo": "card-plan",
+      "description": "Fila de la programación: identidad, detalle y acción; el destacado lleva borde y halo rojos.",
+      "html": "<div class=\"ds-plan\"><span class=\"ds-tag\">Recomendado</span><div><h3 class=\"ds-plan-name\">Personalizado 1:1</h3><p class=\"ds-plan-tagline\">Conmigo al lado en cada serie.</p></div><ul class=\"ds-plan-list\"><li>Plan de progresión mes a mes</li><li>Medidas y seguimiento mensual</li></ul></div>",
+      "css": ".ds-plan { position: relative; display: grid; grid-template-columns: 1fr 1.3fr; gap: 2rem; align-items: center; padding: 2rem 2rem; background: linear-gradient(180deg, #211e1e, #181515); border: 1px solid #332e2e; border-radius: 16px; box-shadow: 0 24px 40px -32px #000; color: #f3f4f6; } .ds-plan:hover { border-color: rgb(255 42 42 / 0.6); box-shadow: 0 0 0 1px rgb(255 42 42 / 0.2), 0 28px 60px -34px rgb(255 42 42 / 0.55); } .ds-tag { position: absolute; top: -0.8rem; left: 2rem; padding: 0.2rem 0.6rem; font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: #0d0c0c; background: #f3f4f6; border-radius: 4px; } .ds-plan-name { margin: 0; font-family: 'Adventor', 'Century Gothic', 'Avant Garde', sans-serif; font-weight: 700; letter-spacing: -0.02em; font-size: 2rem; line-height: 1.05; text-transform: uppercase; } .ds-plan-tagline { margin: 0.45rem 0 0; color: #b8b2b0; font-family: 'Barlow', sans-serif; } .ds-plan-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; font-family: 'Barlow', sans-serif; color: #d4cfcd; } .ds-plan-list li { position: relative; padding-left: 1.2rem; } .ds-plan-list li::before { content: ''; position: absolute; left: 0; top: 0.78em; width: 0.6rem; height: 2px; background: #8d8684; }"
+    },
+    {
+      "name": "Section Title",
+      "kind": "custom",
+      "description": "Titular Adventor 700 hueso con la frase de apoyo en Adventor 400 gris parlante.",
+      "html": "<h2 class=\"ds-section-title\">Escoge cómo <em>entrenamos</em>.</h2>",
+      "css": ".ds-section-title { margin: 0; font-family: 'Adventor', 'Century Gothic', 'Avant Garde', sans-serif; font-weight: 700; letter-spacing: -0.02em; font-size: clamp(2rem, 4.4vw, 3.5rem); line-height: 1.02; text-transform: uppercase; color: #f3f4f6; } .ds-section-title em { font-style: normal; font-weight: 400; color: #b8b2b0; }"
+    },
+    {
+      "name": "Chat Input",
+      "kind": "input",
+      "refersTo": "chat-input",
+      "description": "Campo del chat de WhatsApp con botón circular de enviar.",
+      "html": "<form class=\"ds-compose\"><textarea class=\"ds-input\" rows=\"2\">Hola Ronald, quiero información.</textarea><button class=\"ds-send\" type=\"button\" aria-label=\"Enviar\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M3.4 20.4 21 12 3.4 3.6l-.02 6.53L15 12 3.38 13.87z\"/></svg></button></form>",
+      "css": ".ds-compose { display: flex; align-items: flex-end; gap: 0.6rem; padding: 0.75rem; background: #181515; border-top: 1px solid #2c2727; } .ds-input { flex: 1; min-width: 0; resize: none; padding: 0.65rem 0.8rem; font-family: 'Barlow', sans-serif; font-size: 0.95rem; line-height: 1.4; color: #f3f4f6; background: #221e1e; border: 1px solid #3a3434; border-radius: 14px; caret-color: #ff2a2a; } .ds-input:focus-visible { outline: none; border-color: #ff2a2a; } .ds-send { flex: none; display: grid; place-items: center; width: 46px; height: 46px; border: 0; border-radius: 50%; color: #fff; background: #ff2a2a; cursor: pointer; transition: background 0.2s, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-send svg { width: 20px; height: 20px; } .ds-send:hover { background: #ff4747; transform: scale(1.06); } .ds-send:focus-visible { outline: 2px solid #ff2a2a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "description": "Barra sin fondo sobre el hero: monograma Adventor hueso, enlaces condensados.",
+      "html": "<header class=\"ds-bar\"><span class=\"ds-mark\">RR</span><nav class=\"ds-nav\"><a href=\"#\">Quién soy</a><a href=\"#\">Planes</a><a href=\"#\">Alumnos</a></nav></header>",
+      "css": ".ds-bar { display: flex; align-items: center; gap: 1.5rem; padding: 1.1rem 2rem; background: #0d0c0c; } .ds-mark { font-family: 'Adventor', 'Century Gothic', 'Avant Garde', sans-serif; font-weight: 700; letter-spacing: -0.03em; font-size: 1.7rem; line-height: 1; color: #f3f4f6; } .ds-nav { display: flex; gap: 2.25rem; margin-left: auto; } .ds-nav a { font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-weight: 600; font-size: 0.95rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: #dcd7d5; transition: color 0.2s; } .ds-nav a:hover { color: #fff; text-decoration: underline; text-decoration-color: #f3f4f6; text-decoration-thickness: 2px; text-underline-offset: 0.45em; } .ds-nav a:focus-visible { outline: 2px solid #f3f4f6; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El Picó",
+    "overview": "La página es un picó bogotano: una cabina negra que retumba, el nombre del dueño en mayúsculas geométricas enormes (RONALD en hueso, RUIZ en rojo sólido), títulos de campeón atornillados como placas y un cono de parlante que late como un bajo. Todo el sistema sale de ese objeto. Las superficies son negro de cabina con relieve de hardware (bordes finos, brillo interior de 1px, sombras largas y difusas). El rótulo en cambio es sobrio: tinta plana, sin cromo, sin extrusión, sin degradados. El único color caliente es el rojo del nombre y de la acción de WhatsApp.\n\nLa densidad es de cartel, no de dashboard: pocas piezas grandes por pantalla, titulares en Adventor bold en mayúsculas apretadas, lectura en Barlow a buen tamaño y todo lo demás en etiquetas condensadas espaciadas. El movimiento es parte del material: el nombre se revela una vez al cargar con un barrido de izquierda a derecha, el cono late en ciclo de bajo y la franja de lemas corre como marquesina.\n\nRechazos confirmados: la landing fitness genérica de foto + titular + tres tarjetas, y el lettering metálico (cromo con extrusión), que el usuario descartó.",
+    "keyCharacteristics": [
+      "Negro de cabina como lienzo; profundidad por tono, bordes de 1px y sombras largas negras.",
+      "Rótulo en tinta plana: hueso sobre negro o negro sobre hueso, sin acabados metálicos ni degradados.",
+      "Rojo #FF2A2A por ley: la palabra RUIZ del nombre y acciones de WhatsApp, nada más.",
+      "Una sola display (Adventor, geométrica tipo Avant Garde) en mayúsculas bold; Barlow para leer; Barlow Condensed para rotular.",
+      "Botones con forma de hardware de sonido: cono de parlante, píldoras, placas atornilladas."
+    ],
+    "rules": [
+      {
+        "name": "The Red Law Rule",
+        "body": "El rojo #FF2A2A aparece solo en el nombre (RUIZ en el hero) y en acciones que abren WhatsApp. Si un elemento rojo no es el nombre ni lleva a WhatsApp, no es rojo. El aliado AETHA usa botón hueso, nunca rojo.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sober Geometric Rule",
+        "body": "El rótulo es tinta plana en una sola display geométrica: hueso (o rojo en RUIZ) sobre negro, negro sobre hueso. Nunca cromo, degradados, extrusiones, trazos vaciados, sombras ni resplandores sobre texto. El metal vive en el hardware (tornillos, placas), no en las letras.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Display Rule",
+        "body": "Adventor es la única display y siempre va en mayúsculas a peso 700 con tracking negativo (-0.02em); solo la franja de lemas lo abre a +0.02em. No se mezcla con otra display ni se usa para texto corrido.",
+        "section": "typography"
+      },
+      {
+        "name": "The Quiet Phrase Rule",
+        "body": "En los títulos de sección, la frase de apoyo baja a Adventor 400 en gris parlante; el contraste es de peso y tono, no de estilo. Sin cursivas.",
+        "section": "typography"
+      },
+      {
+        "name": "The Only Red Glows Rule",
+        "body": "Nada emite luz salvo las acciones de WhatsApp. Las demás superficies se hunden en negro; no hay sombras de color neutras ni resplandores decorativos.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Soft Drop Rule",
+        "body": "Las sombras son largas, difusas y con spread negativo. Ni tarjetas, ni botones, ni texto llevan sombras duras desplazadas.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do reservar el rojo #FF2A2A para el nombre (RUIZ) y las acciones que abren WhatsApp; cualquier otro enlace usa hueso.",
+      "Do escribir nombre, títulos y titulares en Adventor 700 mayúsculas, tracking -0.02em, tinta plana; la frase de apoyo del titular en Adventor 400 gris parlante.",
+      "Do construir contenedores como hardware: gradiente de panel, borde de 1px filete, brillo interior de 1px y caída larga negra.",
+      "Do usar píldora (999px) o círculo para todo lo que se pulsa.",
+      "Do mover las cosas como equipo de sonido: easing cubic-bezier(0.16, 1, 0.3, 1), el nombre se revela en barrido una sola vez, el cono late en ciclo de 1.8s, y todo se detiene con prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't volver a la landing fitness genérica de foto + titular + tres tarjetas; los planes son filas de programación, no una rejilla de precios.",
+      "Don't usar rojo para enlaces, íconos, destacados o fondos que no llevan a WhatsApp, ni para el aliado AETHA.",
+      "Don't añadir una segunda display o usar Adventor en minúscula o para texto corrido.",
+      "Don't dar acabados metálicos, degradados, extrusiones, trazos vaciados, sombras ni resplandores al texto.",
+      "Don't poner sombras duras desplazadas en tarjetas, botones o texto."
+    ]
+  }
+}

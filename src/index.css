@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Adventor';
+  src: url('/fonts/texgyreadventor-regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Adventor';
+  src: url('/fonts/texgyreadventor-bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --ink: #0d0c0c;
+  --cabinet: #151313;
+  --panel: #1e1b1b;
+  --panel-2: #262222;
+  --rule: #332e2e;
+  --bone: #f3f4f6;
+  --muted: #b8b2b0;
+  --red: #ff2a2a;
+  --red-deep: #a8101a;
+  --red-glow: rgb(255 42 42 / 0.45);
+
+  --bolt: radial-gradient(circle at 35% 35%, #ffffff 0 18%, #9aa0a8 45%, #33373c 100%);
+
+  --display: 'Adventor', 'Century Gothic', 'Avant Garde', sans-serif;
+  --label: 'Barlow Condensed', 'Barlow', sans-serif;
+  --body: 'Barlow', system-ui, sans-serif;
+
+  --gutter: clamp(1rem, 4vw, 3.5rem);
+  --max: 1240px;
+  --bar-h: 4.25rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--bar-h);
+  scrollbar-color: var(--red-deep) var(--ink);
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--bone);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--red);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--red-deep);
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+button,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

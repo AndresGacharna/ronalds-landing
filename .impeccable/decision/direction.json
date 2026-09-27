@@ -1,0 +1,97 @@
+{
+  "title": "Elige el mundo visual",
+  "question": "La tirada asignó «El Picó». Quédate con ella, toma una alternativa o vuelve a tirar.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "El Picó",
+      "kicker": "THE ROLL",
+      "lineage": "Cabinas pintadas de picó colombiano: nombre del dueño en letras cromadas, títulos de campeón, parlantes como escenario",
+      "thesis": "Ronald se presenta como un picó: su nombre en grande, sin pena, y la página suena cuando la tocas.",
+      "palette": ["#0D0C0C", "#FF2A2A", "#F3F4F6", "#B9BEC6"],
+      "materials": ["letras cromadas pintadas a mano", "frente de cabina con conos de parlante", "panel rojo aerografiado"],
+      "viewport": "La foto del banner enmarcada como frente de cabina, RONALD RUIZ en letras cromadas enormes y el título 'Personal Trainer · Bogotá' como el del picó; botón de WhatsApp como el cono principal.",
+      "risk": "Si la ejecución se pone kitsch, pierde confianza para clientes mayores; exige letras muy bien dibujadas.",
+      "raised": [
+        {"from": "challenger-crt", "raise": "Ley de paleta: el rojo pleno solo es para el nombre y la acción de WhatsApp; todo lo demás vive en negro, cromo y hueso."},
+        {"from": "challenger-terminal", "raise": "Una sola familia display condensada para todo lo que grita; el resto es un texto sobrio."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "El reloj de intervalos",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Relojes LED rojos de siete segmentos colgados en la pared del gimnasio",
+      "thesis": "La página corre como una sesión: cada sección es un round en el reloj rojo del gym.",
+      "palette": ["#111010", "#FF2A2A", "#3A1414", "#F3F4F6"],
+      "materials": ["dígitos LED de siete segmentos", "acrílico negro", "cinta de piso"],
+      "viewport": "Foto del banner a sangre, un reloj LED arriba contando la sesión y el nombre en tipo condensada; CTA fijo como el botón 'START'.",
+      "risk": "Es la lectura más cercana a lo que todo sitio fitness hace (negro + rojo)."
+    },
+    {
+      "id": "challenger-wildstyle",
+      "label": "Blackbook de grafiti",
+      "verdict": "competitive",
+      "lineage": "Página de blackbook con wildstyle; Bogotá como capital del grafiti",
+      "thesis": "El nombre de Ronald como pieza de grafiti, con una versión rápida (throw-up) para el botón.",
+      "palette": ["#141212", "#FF2A2A", "#F3EDE4", "#000000"],
+      "materials": ["marcador", "doble keyline", "papel de libreta"],
+      "viewport": "Nombre en wildstyle rojo sobre negro junto al retrato, flechas que salen de las letras hacia los planes.",
+      "case": "Fusiona bien con la calle bogotana; pierde en claridad porque el wildstyle se lee con dificultad.",
+      "risk": "Puede alejar a clientes mayores o corporativos.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-wildstyle-blackbook-page-hero.webp"
+    },
+    {
+      "id": "challenger-crt",
+      "label": "Arcade CRT",
+      "verdict": "declined",
+      "lineage": "Pantalla de arcade pixel-art",
+      "thesis": "La sesión como juego con power-ups.",
+      "palette": ["#000000", "#FF2A2A", "#FFD24A"],
+      "materials": ["píxeles gruesos", "scanlines"],
+      "viewport": "Pantalla de inicio 'PRESS START'.",
+      "case": "Gamifica algo que el público vive como cuidado personal.",
+      "risk": "Novedad retro.",
+      "kept": "Ley de paleta: un color reservado para un solo estado.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-crt-arcade-pixel-glow-hero.webp"
+    },
+    {
+      "id": "challenger-terminal",
+      "label": "Terminal fósforo",
+      "verdict": "declined",
+      "lineage": "Terminal de fósforo verde",
+      "thesis": "La conversación como transcript.",
+      "palette": ["#050805", "#39FF6A"],
+      "materials": ["fósforo", "vidrio curvo"],
+      "viewport": "Un cursor que escribe la presentación.",
+      "case": "Nadie en el gimnasio se identifica con una terminal.",
+      "risk": "Frío y técnico.",
+      "kept": "Disciplina de una sola cara tipográfica."
+    },
+    {
+      "id": "challenger-city",
+      "label": "Ciudad de noche",
+      "verdict": "declined",
+      "lineage": "Nocturno urbano con lluvia",
+      "thesis": "El entrenamiento a la hora azul.",
+      "palette": ["#0B1433", "#F2A33A", "#000000"],
+      "materials": ["reflejos mojados", "neón"],
+      "viewport": "Skyline con la foto superpuesta.",
+      "case": "El azul choca con las fotos rojas y no dice nada del servicio.",
+      "risk": "Moody sin oferta.",
+      "kept": "Bandas sincronizadas: el scroll como una sola noche continua."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "El estándar de la categoría",
+    "thesis": "Landing fitness oscura: foto héroe, tipo condensada, CTA rojo.",
+    "palette": ["#161616", "#FF2A2A", "#F3F4F6", "#262626"],
+    "materials": ["fotografía", "grilla limpia"],
+    "viewport": "Banner a sangre con titular y botón; secciones en tarjetas.",
+    "risk": "Indistinguible de cualquier otro entrenador por diseño."
+  },
+  "steer": true
+}
