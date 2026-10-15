@@ -9,17 +9,16 @@ const INSTAGRAM = { handle: 'stevennruizz', url: 'https://www.instagram.com/stev
 const AETHA = { url: 'https://www.aetha.co' }
 
 const SLOGANS = [
-  'Top 1 en planes personalizados',
   'Más de 6 años de experiencia',
   'Presencial en Bogotá',
   'Online donde estés',
-  'Más de un año en Smart Fit',
   'Entrenamiento a tu medida',
 ]
 
 const TITLES = [
   { big: 'Top 1', small: 'en venta de planes personalizados en planta' },
-  { big: '+6 años', small: 'entrenando personas en deportes y gimnasio' },  { big: 'Entre sedes', small: 'apoyando a los líderes a subir encuestas y resultados' },
+  { big: '+6 años', small: 'entrenando personas en deportes y gimnasio' },
+  { big: 'Entre sedes', small: 'apoyando a los líderes a subir encuestas y resultados' },
 ]
 
 // Planes de referencia: nombres y alcances provisionales, sin tarifas publicadas.
@@ -179,10 +178,6 @@ function App() {
               </p>
               <div className="hero-actions">
                 <ConeButton label="Escríbeme por WhatsApp" onClick={() => openChat()} />
-                <p className="hero-proof">
-                  <SparkIcon className="spark" />
-                  Top 1 en planes personalizados · Smart Fit Bogotá
-                </p>
               </div>
             </div>
           </div>
@@ -222,10 +217,9 @@ function App() {
               Me mandan a donde hay que <em>subir el nivel</em>.
             </h2>
             <p>
-              Llevo más de 6 años entrenando personas, en deportes y en el gimnasio. Hoy estoy en Smart Fit Bogotá, en
-              planta, donde llevo más de un año entrenando todos los días. Por los resultados me han trasladado entre
-              sedes para apoyar a los líderes a mejorar la experiencia de los usuarios y las ventas. Y sigo ahí, en el
-              piso del gimnasio.
+              Llevo más de 6 años entrenando personas, en deportes y en el gimnasio, todos los días. Por los resultados
+              me han trasladado entre sedes para apoyar a los líderes a mejorar la experiencia de los usuarios y las
+              ventas. Y sigo ahí, en el piso del gimnasio.
             </p>
             <p>
               Cada persona llega con algo distinto: poco tiempo, una rodilla que molesta, pena de arrancar o ganas de

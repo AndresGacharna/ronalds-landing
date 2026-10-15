@@ -283,19 +283,6 @@ main {
   align-items: center;
   gap: 1.4rem 2.2rem;
 }
-.hero-proof {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  max-width: 22em;
-  margin: 0;
-  font-size: 0.9rem;
-  color: #b9b1b1;
-}
-.hero-proof .spark {
-  flex: none;
-  color: var(--red);
-}
 
 /* ------------------------------------------------------------
    Speaker-cone call to action
