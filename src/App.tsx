@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react'
 import { ArrowIcon, CloseIcon, InstagramIcon, MenuIcon, SparkIcon, WhatsAppIcon } from './icons'
+import { AethaBubble } from './AethaBubble'
 import { Calculators } from './Calculators'
 import { DEFAULT_MESSAGE, WhatsAppChat } from './WhatsAppChat'
 import './App.css'
@@ -390,6 +391,8 @@ function App() {
           <span>@{INSTAGRAM.handle}</span>
         </a>
       </footer>
+
+      <AethaBubble url={AETHA.url} hidden={chatOpen} />
 
       <WhatsAppChat
         open={chatOpen}
