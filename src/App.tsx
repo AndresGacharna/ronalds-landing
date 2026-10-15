@@ -18,7 +18,7 @@ const SLOGANS = [
 const TITLES = [
   { big: 'Top 1', small: 'en venta de planes personalizados en planta' },
   { big: '+6 años', small: 'entrenando personas en deportes y gimnasio' },
-  { big: 'Entre sedes', small: 'apoyando a los líderes a subir encuestas y resultados' },
+  { big: 'Cuerpo + mente', small: 'hábitos, disciplina y confianza que se quedan contigo' },
 ]
 
 // Planes de referencia: nombres y alcances provisionales, sin tarifas publicadas.
@@ -214,17 +214,30 @@ function App() {
 
           <div className="about-copy">
             <h2 id="about-title" className="section-title">
-              Me mandan a donde hay que <em>subir el nivel</em>.
+              No solo cambio cuerpos. Cambio <em>vidas</em>.
             </h2>
             <p>
-              Llevo más de 6 años entrenando personas, en deportes y en el gimnasio, todos los días. Por los resultados
-              me han trasladado entre sedes para apoyar a los líderes a mejorar la experiencia de los usuarios y las
-              ventas. Y sigo ahí, en el piso del gimnasio.
+              Llevo más de 6 años entrenando personas en deportes y en el gimnasio, y lo he visto una y otra vez: cuando
+              alguien empieza a entrenar en serio, no cambia solo su cuerpo. Cambia cómo duerme, cómo come, cómo se ve
+              al espejo y cómo enfrenta su día.
             </p>
             <p>
-              Cada persona llega con algo distinto: poco tiempo, una rodilla que molesta, pena de arrancar o ganas de
-              ir por más. Mi trabajo es adaptarme a ti, no al revés, y que salgas de cada sesión con ganas de volver.
+              Por eso no te entrego una rutina y ya. Te acompaño a construir hábitos, disciplina y confianza: un cuerpo
+              más fuerte, una mente más firme y una versión de ti que no se rinde. Crecimiento en todos los aspectos.
             </p>
+            <p>
+              Llegues con poco tiempo, una rodilla que molesta, pena de arrancar o ganas de ir por más, tu plan se
+              adapta a ti, no al revés. El primer paso es escribirme.
+            </p>
+
+            <div className="about-cta">
+              <ConeButton
+                label="Quiero mi plan personalizado"
+                onClick={() =>
+                  openChat('Hola Steven, quiero empezar mi entrenamiento personalizado. ¿Me cuentas cómo funciona?')
+                }
+              />
+            </div>
 
             <ul className="titles" aria-label="Logros">
               {TITLES.map((t) => (

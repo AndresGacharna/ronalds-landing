@@ -479,6 +479,9 @@ main {
 .about-copy > h2 + p {
   margin-top: 1.9rem;
 }
+.about-cta {
+  margin-top: 2.25rem;
+}
 .titles {
   list-style: none;
   padding: 0;
