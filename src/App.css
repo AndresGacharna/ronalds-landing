@@ -1320,9 +1320,13 @@ main {
   .aetha-bubble-short {
     display: block;
     overflow: hidden;
-    font-size: 0.8rem;
-    line-height: 1.15;
-    color: var(--muted);
+    font-family: var(--label);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--bone);
   }
   .aetha-bubble-cta {
     grid-column: auto;
@@ -1338,9 +1342,28 @@ main {
     transform: translateY(-50%);
   }
 }
-@media (max-width: 400px) {
-  .aetha-bubble-short {
-    visibility: hidden;
+/* Narrow phones: the CTA folds into a round arrow so the hook keeps its room */
+@media (max-width: 420px) {
+  .aetha-bubble-link {
+    gap: 0.6rem;
+  }
+  .aetha-bubble-cta {
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+  }
+  .aetha-bubble-cta span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .aetha-bubble-cta svg {
+    display: block;
   }
 }
 @keyframes baja {

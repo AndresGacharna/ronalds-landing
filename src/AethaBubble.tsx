@@ -4,7 +4,7 @@ import { ArrowIcon, CloseIcon } from './icons'
 const DISMISS_KEY = 'aetha-bubble-dismissed'
 
 const COPY = {
-  default: { long: 'Proteína, creatina y pre-entrenos con asesoría real.', short: 'Suplementos con asesoría' },
+  default: { long: 'Proteína, creatina y pre-entrenos con asesoría real.', short: 'Recarga tu plan' },
   tools: { long: '¿Ya sacaste tu proteína? Encuéntrala en AETHA.', short: 'Tu proteína, aquí' },
 }
 
