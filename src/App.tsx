@@ -153,13 +153,15 @@ function App() {
                   <path d="M-104 0H104M-90 -39H90M-90 39H90M-56 -66H56M-56 66H56" />
                 </g>
               </svg>
-              <img
-                src="/images/opt/hero-steven.webp"
-                alt="Steven Ruiz, entrenador personal, de brazos cruzados"
-                width="1011"
-                height="1400"
-                fetchPriority="high"
-              />
+              <span className="hero-figure">
+                <img
+                  src="/images/opt/hero-steven.webp"
+                  alt="Steven Ruiz, entrenador personal, de brazos cruzados"
+                  width="1011"
+                  height="1400"
+                  fetchPriority="high"
+                />
+              </span>
             </div>
 
             <div className="hero-copy">
