@@ -10,6 +10,7 @@ const AETHA = { url: 'https://www.aetha.co' }
 
 const SLOGANS = [
   'Top 1 en planes personalizados',
+  'Más de 6 años de experiencia',
   'Presencial en Bogotá',
   'Online donde estés',
   'Más de un año en Smart Fit',
@@ -18,8 +19,7 @@ const SLOGANS = [
 
 const TITLES = [
   { big: 'Top 1', small: 'en venta de planes personalizados en planta' },
-  { big: '+1 año', small: 'entrenando en Smart Fit Bogotá' },
-  { big: 'Entre sedes', small: 'apoyando a los líderes a subir encuestas y resultados' },
+  { big: '+6 años', small: 'entrenando personas en deportes y gimnasio' },  { big: 'Entre sedes', small: 'apoyando a los líderes a subir encuestas y resultados' },
 ]
 
 // Planes de referencia: nombres y alcances provisionales, sin tarifas publicadas.
@@ -49,21 +49,21 @@ const PLANS = [
 const TESTIMONIALS = [
   {
     img: '/images/opt/usuario1.webp',
-    alt: 'Ronald corrigiendo a un alumno en press de hombros con mancuernas',
+    alt: 'Steven corrigiendo a un alumno en press de hombros con mancuernas',
     quote: 'Llegué sin técnica y con afán de subir peso. Me corrigió desde el primer día y ahora entreno con confianza.',
     name: 'Santiago M.',
     detail: 'Personalizado 1:1',
   },
   {
     img: '/images/opt/usuario2.webp',
-    alt: 'Ronald guiando a una alumna en hip thrust con barra',
+    alt: 'Steven guiando a una alumna en hip thrust con barra',
     quote: 'Me adapta la rutina según cómo llegue ese día. Nunca me he sentido juzgada, y los resultados se notan.',
     name: 'Laura G.',
     detail: 'Personalizado 1:1',
   },
   {
     img: '/images/opt/usuario3.webp',
-    alt: 'Ronald acompañando a una señora mayor en la bicicleta estática',
+    alt: 'Steven acompañando a una señora mayor en la bicicleta estática',
     quote: 'Pensé que el gimnasio no era para mí. Con su paciencia ahora vengo feliz tres veces por semana.',
     name: 'Marta R.',
     detail: 'Plan Arranque',
@@ -106,8 +106,8 @@ function App() {
       </a>
 
       <header className="bar">
-        <a href="#top" className="bar-mark" aria-label="Ronald Ruiz, inicio">
-          <img src="/images/logos/monograma-rr-blanco.svg" alt="" width="44" height="44" />
+        <a href="#top" className="bar-mark" aria-label="Steven Ruiz, inicio">
+          <img src="/images/logos/monograma-sr-rojo.svg" alt="" width="44" height="44" />
         </a>
         <nav id="menu" aria-label="Secciones" className={menuOpen ? 'is-open' : ''}>
           <a href="#quien-soy" onClick={() => setMenuOpen(false)}>
@@ -142,33 +142,49 @@ function App() {
       <main id="top">
         {/* HERO: la cabina */}
         <section className="hero" aria-labelledby="hero-name">
-          <picture className="hero-photo">
-            <source media="(max-width: 759px)" srcSet="/images/opt/banner-phone.webp" />
-            <source media="(max-width: 1024px) and (orientation: portrait)" srcSet="/images/opt/banner-mobile.webp" />
-            <img
-              src="/images/opt/banner.webp"
-              alt="Ronald Ruiz de brazos cruzados en un gimnasio iluminado con neón rojo"
-              width="2400"
-              height="793"
-              fetchPriority="high"
-            />
-          </picture>
-
           <div className="hero-inner">
-            <h1 id="hero-name" className="hero-name">
-              <Lettering text="Ronald" />
-              <Lettering text="Ruiz" />
-            </h1>
-            <p className="plaque">
-              <span className="bolt" aria-hidden="true" />
-              Personal trainer · Bogotá
-              <span className="bolt" aria-hidden="true" />
-            </p>
-            <p className="hero-lede">
-              Entrenamiento personalizado, presencial u online. Te escucho, adapto el plan a tu vida y le metemos toda la
-              energía.
-            </p>
-            <ConeButton label="Escríbeme por WhatsApp" onClick={() => openChat()} />
+            <div className="hero-photo">
+              <svg className="hero-globe" viewBox="-110 -84 220 168" aria-hidden="true">
+                <g>
+                  <ellipse className="globe-rim" rx="104" ry="78" />
+                  {[0, 1, 2, 3, 4, 5].map((i) => (
+                    <ellipse key={i} className="globe-mer" rx="104" ry="78" style={{ animationDelay: `${i * -2.33}s` }} />
+                  ))}
+                  <path d="M-104 0H104M-90 -39H90M-90 39H90M-56 -66H56M-56 66H56" />
+                </g>
+              </svg>
+              <img
+                src="/images/opt/hero-steven.webp"
+                alt="Steven Ruiz, entrenador personal, de brazos cruzados"
+                width="1011"
+                height="1400"
+                fetchPriority="high"
+              />
+            </div>
+
+            <div className="hero-copy">
+              <h1 id="hero-name" className="hero-name">
+                <img src="/images/logos/nombre-sr.svg" alt="Steven Ruiz" width="322" height="104" />
+              </h1>
+              <ul className="hero-chips" aria-label="Modalidad">
+                <li className="plaque">
+                  <span className="bolt" aria-hidden="true" />
+                  Personal trainer · Bogotá
+                </li>
+                <li className="plaque plaque-ghost">Presencial + online</li>
+              </ul>
+              <p className="hero-lede">
+                Entrenamiento personalizado, presencial u online. Te escucho, adapto el plan a tu vida y le metemos toda
+                la energía.
+              </p>
+              <div className="hero-actions">
+                <ConeButton label="Escríbeme por WhatsApp" onClick={() => openChat()} />
+                <p className="hero-proof">
+                  <SparkIcon className="spark" />
+                  Top 1 en planes personalizados · Smart Fit Bogotá
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -193,10 +209,10 @@ function App() {
         <section id="quien-soy" className="about wrap" aria-labelledby="about-title">
           <figure className="about-photo">
             <img
-              src="/images/opt/quiensoy-perfil.webp"
-              alt="Retrato de Ronald Ruiz"
-              width="480"
-              height="600"
+              src="/images/opt/hero-steven.webp"
+              alt="Retrato de Steven Ruiz de brazos cruzados"
+              width="1011"
+              height="1400"
               loading="lazy"
             />
           </figure>
@@ -206,9 +222,10 @@ function App() {
               Me mandan a donde hay que <em>subir el nivel</em>.
             </h2>
             <p>
-              Llevo más de un año en Smart Fit Bogotá, en planta, entrenando todos los días. Por los resultados me han
-              trasladado entre sedes para apoyar a los líderes a mejorar la experiencia de los usuarios y las ventas. Y
-              sigo ahí, en el piso del gimnasio.
+              Llevo más de 6 años entrenando personas, en deportes y en el gimnasio. Hoy estoy en Smart Fit Bogotá, en
+              planta, donde llevo más de un año entrenando todos los días. Por los resultados me han trasladado entre
+              sedes para apoyar a los líderes a mejorar la experiencia de los usuarios y las ventas. Y sigo ahí, en el
+              piso del gimnasio.
             </p>
             <p>
               Cada persona llega con algo distinto: poco tiempo, una rodilla que molesta, pena de arrancar o ganas de
@@ -265,7 +282,7 @@ function App() {
                     className="plan-cta"
                     onClick={() =>
                       openChat(
-                        `Hola Ronald, me interesa el plan ${plan.name}. ¿Me cuentas tarifas y horarios disponibles?`,
+                        `Hola Steven, me interesa el plan ${plan.name}. ¿Me cuentas tarifas y horarios disponibles?`,
                       )
                     }
                   >
@@ -354,13 +371,13 @@ function App() {
             <p>
               Cuéntame tu objetivo y tus horarios. Te respondo y armamos tu plan, presencial en Bogotá u online.
             </p>
-            <ConeButton size="xl" label="Hablar con Ronald" onClick={() => openChat()} />
+            <ConeButton size="xl" label="Hablar con Steven" onClick={() => openChat()} />
           </div>
         </section>
       </main>
 
       <footer className="foot wrap">
-        <span>© {new Date().getFullYear()} Ronald Ruiz · Personal trainer · Bogotá</span>
+        <span>© {new Date().getFullYear()} Steven Ruiz · Personal trainer · Bogotá</span>
         <a href={INSTAGRAM.url} target="_blank" rel="noopener noreferrer">
           <InstagramIcon />
           <span>@{INSTAGRAM.handle}</span>

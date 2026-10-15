@@ -4,9 +4,9 @@ import { CloseIcon, SendIcon, WhatsAppIcon } from './icons'
 const PHONE = '573117744796'
 
 export const DEFAULT_MESSAGE =
-  'Hola Ronald, vi tus servicios de personal trainer. Quisiera consultar tarifas, horarios disponibles y si manejas planes presenciales u online.'
+  'Hola Steven, vi tus servicios de personal trainer. Quisiera consultar tarifas, horarios disponibles y si manejas planes presenciales u online.'
 
-const GREETING = '¡Hola! 👋 Soy Ronald. Cuéntame qué quieres lograr y armamos tu plan. Te respondo por WhatsApp.'
+const GREETING = '¡Hola! 👋 Soy Steven. Cuéntame qué quieres lograr y armamos tu plan. Te respondo por WhatsApp.'
 
 function whatsappUrl(text: string) {
   const params = new URLSearchParams({
@@ -37,7 +37,7 @@ export function WhatsAppChat({ open, draft, onDraftChange, onOpen, onClose }: Pr
   const inputRef = useRef<HTMLTextAreaElement>(null)
   const fabRef = useRef<HTMLButtonElement>(null)
 
-  // Each time the chat opens, Ronald "types" before the greeting lands.
+  // Each time the chat opens, Steven "types" before the greeting lands.
   useEffect(() => {
     if (!open) return
     setTeaser(false)
@@ -80,14 +80,14 @@ export function WhatsAppChat({ open, draft, onDraftChange, onOpen, onClose }: Pr
       <section
         className={`wa-panel${open ? ' is-open' : ''}`}
         role="dialog"
-        aria-label="Chat con Ronald"
+        aria-label="Chat con Steven"
         aria-hidden={!open}
         inert={!open}
       >
         <header className="wa-head">
           <img className="wa-avatar" src="/images/opt/avatar.webp" alt="" width="44" height="44" />
           <div className="wa-who">
-            <strong>Ronald Ruiz</strong>
+            <strong>Steven Ruiz</strong>
             <span aria-live="polite">{typing ? 'escribiendo…' : 'en línea'}</span>
           </div>
           <button type="button" className="wa-close" onClick={onClose} aria-label="Cerrar chat">
@@ -98,7 +98,7 @@ export function WhatsAppChat({ open, draft, onDraftChange, onOpen, onClose }: Pr
         <div className="wa-body">
           <p className="wa-day">Hoy</p>
           {typing ? (
-            <div className="wa-bubble wa-typing" aria-label="Ronald está escribiendo">
+            <div className="wa-bubble wa-typing" aria-label="Steven está escribiendo">
               <span />
               <span />
               <span />
@@ -119,7 +119,7 @@ export function WhatsAppChat({ open, draft, onDraftChange, onOpen, onClose }: Pr
           }}
         >
           <label htmlFor="wa-msg" className="sr-only">
-            Tu mensaje para Ronald
+            Tu mensaje para Steven
           </label>
           <textarea
             id="wa-msg"
@@ -163,7 +163,7 @@ export function WhatsAppChat({ open, draft, onDraftChange, onOpen, onClose }: Pr
         className={`wa-fab${open ? ' is-open' : ''}`}
         onClick={open ? onClose : onOpen}
         aria-expanded={open}
-        aria-label={open ? 'Cerrar chat de WhatsApp' : 'Abrir chat de WhatsApp con Ronald'}
+        aria-label={open ? 'Cerrar chat de WhatsApp' : 'Abrir chat de WhatsApp con Steven'}
       >
         {open ? <CloseIcon /> : <WhatsAppIcon />}
       </button>

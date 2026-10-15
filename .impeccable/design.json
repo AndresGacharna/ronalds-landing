@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-09-26T12:00:00Z",
-  "title": "Design System: Ronald Ruiz · Personal trainer",
+  "title": "Design System: Steven Ruiz · Personal trainer",
   "extensions": {
     "colorMeta": {
       "ink": {
@@ -158,7 +158,7 @@
     "typographyMeta": {
       "display": {
         "displayName": "Display · Adventor 700",
-        "purpose": "Solo el nombre: RONALD en hueso, RUIZ en rojo, tinta plana; 17vw en móvil."
+        "purpose": "Solo el nombre: STEVEN en hueso, RUIZ en rojo, tinta plana; 17vw en móvil."
       },
       "headline": {
         "displayName": "Headline · Adventor 700",
@@ -334,8 +334,8 @@
     {
       "name": "Name Lettering",
       "kind": "custom",
-      "description": "El nombre en Adventor 700, tinta plana: RONALD hueso, RUIZ rojo.",
-      "html": "<h1 class=\"ds-name\"><span class=\"ds-lettering\">Ronald</span><span class=\"ds-lettering ds-red\">Ruiz</span></h1>",
+      "description": "El nombre en Adventor 700, tinta plana: STEVEN hueso, RUIZ rojo.",
+      "html": "<h1 class=\"ds-name\"><span class=\"ds-lettering\">Steven</span><span class=\"ds-lettering ds-red\">Ruiz</span></h1>",
       "css": ".ds-name { display: flex; flex-direction: column; align-items: flex-start; margin: 0; font-family: 'Adventor', 'Century Gothic', 'Avant Garde', sans-serif; font-weight: 700; letter-spacing: -0.02em; font-size: 5rem; line-height: 0.9; text-transform: uppercase; } .ds-lettering { display: inline-block; white-space: nowrap; color: #f3f4f6; animation: ds-barrido 1.1s cubic-bezier(0.16, 1, 0.3, 1) both; } .ds-red { color: #ff2a2a; animation-delay: 0.12s; } @keyframes ds-barrido { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }"
     },
     {
@@ -374,7 +374,7 @@
       "kind": "input",
       "refersTo": "chat-input",
       "description": "Campo del chat de WhatsApp con botón circular de enviar.",
-      "html": "<form class=\"ds-compose\"><textarea class=\"ds-input\" rows=\"2\">Hola Ronald, quiero información.</textarea><button class=\"ds-send\" type=\"button\" aria-label=\"Enviar\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M3.4 20.4 21 12 3.4 3.6l-.02 6.53L15 12 3.38 13.87z\"/></svg></button></form>",
+      "html": "<form class=\"ds-compose\"><textarea class=\"ds-input\" rows=\"2\">Hola Steven, quiero información.</textarea><button class=\"ds-send\" type=\"button\" aria-label=\"Enviar\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M3.4 20.4 21 12 3.4 3.6l-.02 6.53L15 12 3.38 13.87z\"/></svg></button></form>",
       "css": ".ds-compose { display: flex; align-items: flex-end; gap: 0.6rem; padding: 0.75rem; background: #181515; border-top: 1px solid #2c2727; } .ds-input { flex: 1; min-width: 0; resize: none; padding: 0.65rem 0.8rem; font-family: 'Barlow', sans-serif; font-size: 0.95rem; line-height: 1.4; color: #f3f4f6; background: #221e1e; border: 1px solid #3a3434; border-radius: 14px; caret-color: #ff2a2a; } .ds-input:focus-visible { outline: none; border-color: #ff2a2a; } .ds-send { flex: none; display: grid; place-items: center; width: 46px; height: 46px; border: 0; border-radius: 50%; color: #fff; background: #ff2a2a; cursor: pointer; transition: background 0.2s, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-send svg { width: 20px; height: 20px; } .ds-send:hover { background: #ff4747; transform: scale(1.06); } .ds-send:focus-visible { outline: 2px solid #ff2a2a; outline-offset: 3px; }"
     },
     {
@@ -387,7 +387,7 @@
   ],
   "narrative": {
     "northStar": "El Picó",
-    "overview": "La página es un picó bogotano: una cabina negra que retumba, el nombre del dueño en mayúsculas geométricas enormes (RONALD en hueso, RUIZ en rojo sólido), títulos de campeón atornillados como placas y un cono de parlante que late como un bajo. Todo el sistema sale de ese objeto. Las superficies son negro de cabina con relieve de hardware (bordes finos, brillo interior de 1px, sombras largas y difusas). El rótulo en cambio es sobrio: tinta plana, sin cromo, sin extrusión, sin degradados. El único color caliente es el rojo del nombre y de la acción de WhatsApp.\n\nLa densidad es de cartel, no de dashboard: pocas piezas grandes por pantalla, titulares en Adventor bold en mayúsculas apretadas, lectura en Barlow a buen tamaño y todo lo demás en etiquetas condensadas espaciadas. El movimiento es parte del material: el nombre se revela una vez al cargar con un barrido de izquierda a derecha, el cono late en ciclo de bajo y la franja de lemas corre como marquesina.\n\nRechazos confirmados: la landing fitness genérica de foto + titular + tres tarjetas, y el lettering metálico (cromo con extrusión), que el usuario descartó.",
+    "overview": "La página es un picó bogotano: una cabina negra que retumba, el nombre del dueño en mayúsculas geométricas enormes (STEVEN en hueso, RUIZ en rojo sólido), títulos de campeón atornillados como placas y un cono de parlante que late como un bajo. Todo el sistema sale de ese objeto. Las superficies son negro de cabina con relieve de hardware (bordes finos, brillo interior de 1px, sombras largas y difusas). El rótulo en cambio es sobrio: tinta plana, sin cromo, sin extrusión, sin degradados. El único color caliente es el rojo del nombre y de la acción de WhatsApp.\n\nLa densidad es de cartel, no de dashboard: pocas piezas grandes por pantalla, titulares en Adventor bold en mayúsculas apretadas, lectura en Barlow a buen tamaño y todo lo demás en etiquetas condensadas espaciadas. El movimiento es parte del material: el nombre se revela una vez al cargar con un barrido de izquierda a derecha, el cono late en ciclo de bajo y la franja de lemas corre como marquesina.\n\nRechazos confirmados: la landing fitness genérica de foto + titular + tres tarjetas, y el lettering metálico (cromo con extrusión), que el usuario descartó.",
     "keyCharacteristics": [
       "Negro de cabina como lienzo; profundidad por tono, bordes de 1px y sombras largas negras.",
       "Rótulo en tinta plana: hueso sobre negro o negro sobre hueso, sin acabados metálicos ni degradados.",

@@ -7,13 +7,13 @@
 web
 
 ## Users
-Personas en Bogotá (y a distancia) que buscan un entrenador personal: desde principiantes o adultos mayores que necesitan acompañamiento cercano, hasta gente que ya entrena y quiere un plan serio. Llegan desde redes o recomendación, quieren saber quién es Ronald, qué ofrece y escribirle por WhatsApp.
+Personas en Bogotá (y a distancia) que buscan un entrenador personal: desde principiantes o adultos mayores que necesitan acompañamiento cercano, hasta gente que ya entrena y quiere un plan serio. Llegan desde redes o recomendación, quieren saber quién es Steven, qué ofrece y escribirle por WhatsApp.
 
 ## Product Purpose
-Landing page personal de Ronald Ruiz, personal trainer. Éxito = el visitante abre el chat de WhatsApp para consultar tarifas, horarios y modalidad.
+Landing page personal de Steven Ruiz, personal trainer. Éxito = el visitante abre el chat de WhatsApp para consultar tarifas, horarios y modalidad.
 
 ## Positioning
-Entrenador joven, cercano y adaptable que dentro de Smart Fit (Bogotá) es el Top 1 vendiendo planes personalizados en planta. Lleva más de un año allí; fue mano derecha del líder de sede en Metrópolis y lo han trasladado entre sedes (hoy Éxito Occidente) para ayudar a los líderes a subir encuestas y ventas. Sigue en ese puesto.
+Entrenador joven, cercano y adaptable, con más de 6 años de experiencia entrenando personas en deportes y gimnasio, que dentro de Smart Fit (Bogotá) es el Top 1 vendiendo planes personalizados en planta. Lleva más de un año allí; fue mano derecha del líder de sede en Metrópolis y lo han trasladado entre sedes (hoy Éxito Occidente) para ayudar a los líderes a subir encuestas y ventas. Sigue en ese puesto.
 
 ## Capabilities and Constraints
 - Modalidades: presencial y online.
@@ -26,9 +26,10 @@ Entrenador joven, cercano y adaptable que dentro de Smart Fit (Bogotá) es el To
 Personalidad: comprensivo, amable, creyente, joven con mucha aspiración, sin pena, se adapta a cualquier situación, canta mientras entrena. Se transmite en el tono, no se enuncia literalmente.
 
 ## Evidence on Hand
-- `public/images/bannerprincipalsintexto.jpg` (hero horizontal), `quiensoy.jpg` (retrato), `usuario1-3.jpg` (Ronald entrenando clientes; 1 horizontal, 2-3 verticales). Imágenes generadas con IA con marca de agua ✦ abajo a la derecha que debe quedar fuera del recorte.
+- `public/images/bannerprincipalsintexto.jpg` (hero horizontal), `quiensoy.jpg` (retrato), `usuario1-3.jpg` (Steven entrenando clientes; 1 horizontal, 2-3 verticales). Imágenes generadas con IA con marca de agua ✦ abajo a la derecha que debe quedar fuera del recorte.
 - Testimonios: aún no hay reales; se usan 3 de ejemplo que deben reemplazarse.
-- No hay años totales de experiencia ni certificaciones confirmados: no inventarlos.
+- Experiencia total confirmada: más de 6 años entrenando personas en deportes y gimnasio.
+- No hay certificaciones confirmadas: no inventarlas.
 
 ## Product Principles
 1. Todo camino termina en WhatsApp.

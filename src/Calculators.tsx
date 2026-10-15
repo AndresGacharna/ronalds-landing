@@ -230,7 +230,7 @@ function PrCalculator({ onAsk }: { onAsk: (msg: string) => void }) {
               className="calc-ask"
               onClick={() =>
                 onAsk(
-                  `Hola Ronald, hice ${r} reps con ${fmt(w, 1)} kg en ${lift.toLowerCase()} (máximo estimado ${fmt(maxShown, 1)} kg). ¿Me ayudas a armar un plan para subirlo?`,
+                  `Hola Steven, hice ${r} reps con ${fmt(w, 1)} kg en ${lift.toLowerCase()} (máximo estimado ${fmt(maxShown, 1)} kg). ¿Me ayudas a armar un plan para subirlo?`,
                 )
               }
             >
@@ -341,7 +341,7 @@ function CaloriesCalculator({ onAsk }: { onAsk: (msg: string) => void }) {
               className="calc-ask"
               onClick={() =>
                 onAsk(
-                  `Hola Ronald, la calculadora me dio ${fmt(kcal)} kcal al día para ${goal.label.toLowerCase()} (${fmt(protein)} g de proteína, ${fmt(carbs)} g de carbohidratos y ${fmt(fat)} g de grasa). ¿Me armas el plan?`,
+                  `Hola Steven, la calculadora me dio ${fmt(kcal)} kcal al día para ${goal.label.toLowerCase()} (${fmt(protein)} g de proteína, ${fmt(carbs)} g de carbohidratos y ${fmt(fat)} g de grasa). ¿Me armas el plan?`,
                 )
               }
             >
@@ -428,7 +428,7 @@ function ProteinCalculator({ onAsk, shopUrl }: { onAsk: (msg: string) => void; s
                 className="calc-ask"
                 onClick={() =>
                   onAsk(
-                    `Hola Ronald, peso ${fmt(w, 1)} kg (${g.label.toLowerCase()}). La calculadora me dio ${range(min, max)} g de proteína al día. ¿Me ayudas a organizarlo?`,
+                    `Hola Steven, peso ${fmt(w, 1)} kg (${g.label.toLowerCase()}). La calculadora me dio ${range(min, max)} g de proteína al día. ¿Me ayudas a organizarlo?`,
                   )
                 }
               >
@@ -534,7 +534,7 @@ function CarbsCalculator({ onAsk }: { onAsk: (msg: string) => void }) {
               className="calc-ask"
               onClick={() =>
                 onAsk(
-                  `Hola Ronald, peso ${fmt(w, 1)} kg y mi carga de entrenamiento es ${l.label.toLowerCase()}. La calculadora me dio ${dailyText} g de carbohidratos al día. ¿Me ayudas a organizarlo?`,
+                  `Hola Steven, peso ${fmt(w, 1)} kg y mi carga de entrenamiento es ${l.label.toLowerCase()}. La calculadora me dio ${dailyText} g de carbohidratos al día. ¿Me ayudas a organizarlo?`,
                 )
               }
             >
@@ -611,11 +611,11 @@ function CreatineCalculator({ onAsk, shopUrl }: { onAsk: (msg: string) => void; 
                 className="calc-ask"
                 onClick={() =>
                   onAsk(
-                    `Hola Ronald, peso ${fmt(w, 1)} kg y quiero empezar con creatina (${range(3, 5)} g/día según la calculadora). ¿Me asesoras?`,
+                    `Hola Steven, peso ${fmt(w, 1)} kg y quiero empezar con creatina (${range(3, 5)} g/día según la calculadora). ¿Me asesoras?`,
                   )
                 }
               >
-                Preguntarle a Ronald
+                Preguntarle a Steven
                 <ArrowIcon />
               </button>
               <a className="calc-shop" href={shopUrl} target="_blank" rel="noopener sponsored">

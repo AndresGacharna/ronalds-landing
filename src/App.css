@@ -137,62 +137,95 @@ main {
 }
 
 /* ------------------------------------------------------------
-   Hero: the cabinet front
+   Hero: cutout portrait over the turning globe
 ------------------------------------------------------------ */
 .hero {
   position: relative;
   isolation: isolate;
-  min-height: max(100svh - var(--bar-h), 600px);
-  display: grid;
-  align-items: end;
   overflow: hidden;
-}
-.hero-photo img {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 100% 30%;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(
-      90deg,
-      rgb(13 12 12 / 0.96) 0%,
-      rgb(13 12 12 / 0.84) 32%,
-      rgb(13 12 12 / 0.25) 60%,
-      rgb(13 12 12 / 0) 75%
-    ),
-    linear-gradient(0deg, var(--ink) 0%, rgb(13 12 12 / 0) 30%);
+  background: radial-gradient(60% 70% at 74% 42%, rgb(168 16 26 / 0.45) 0%, rgb(13 12 12 / 0) 70%), var(--ink);
 }
 .hero-inner {
   width: min(var(--max), 100% - 2 * var(--gutter));
   margin-inline: auto;
-  padding: 4rem 0 clamp(4.5rem, 11vh, 7.5rem);
+  min-height: clamp(640px, 100svh - var(--bar-h), 880px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas: 'copy photo';
+  align-items: center;
+  gap: clamp(3rem, 7vw, 7rem);
 }
-.hero-name {
+.hero-photo {
+  grid-area: photo;
+  position: relative;
+  align-self: stretch;
+  min-height: 640px;
+  min-width: 0;
+}
+.hero-photo img {
+  position: absolute;
+  left: 56%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: calc(100% - 1.5rem);
+  max-height: 820px;
+  width: auto;
+  max-width: none;
+  mask-image: linear-gradient(180deg, #000 80%, transparent 100%);
+}
+.hero-globe {
+  position: absolute;
+  left: 52%;
+  top: 44%;
+  width: 140%;
+  min-width: 500px;
+  max-width: 1000px;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+  overflow: visible;
+  /* lower half fades out so the lines never show through the faded body */
+  mask-image: linear-gradient(180deg, #000 45%, transparent 75%);
+}
+.hero-globe g {
+  fill: none;
+  stroke: var(--red);
+  stroke-width: 1.4;
+}
+.hero-globe * {
+  vector-effect: non-scaling-stroke;
+}
+.hero-globe .globe-rim {
+  stroke-width: 2.2;
+}
+.globe-mer {
+  transform-box: view-box;
+  transform-origin: 0 0;
+  animation: giro 14s ease-in-out infinite;
+}
+@keyframes giro {
+  50% {
+    transform: scaleX(-1);
+  }
+}
+
+.hero-copy {
+  grid-area: copy;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-family: var(--display);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  font-size: min(9rem, 8.4vw);
-  line-height: 0.95;
-  text-transform: uppercase;
+  gap: 1.6rem;
+  padding-block: 3rem clamp(5.5rem, 12vh, 8rem);
 }
-.hero-name .lettering {
+.hero-name {
+  width: 100%;
+  max-width: 600px;
+  line-height: 0;
+}
+.hero-name img {
+  display: block;
+  width: 100%;
+  height: auto;
   animation: barrido 1.1s var(--ease-out) both;
-}
-.hero-name .lettering:nth-child(2) {
-  color: var(--red);
-  animation-delay: 0.12s;
 }
 
 @keyframes barrido {
@@ -204,30 +237,64 @@ main {
   }
 }
 
+.hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .plaque {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  margin-top: 1.6rem;
-  padding: 0.55rem 0.9rem;
+  padding: 0.6rem 1rem;
   font-family: var(--label);
   font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.16em;
+  font-size: 0.95rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--bone);
-  background: linear-gradient(180deg, #2b2727, #161313);
-  border: 1px solid #403a3a;
-  border-radius: 6px;
-  box-shadow:
-    inset 0 1px 0 rgb(255 255 255 / 0.08),
-    0 10px 24px -10px rgb(0 0 0 / 0.9);
+  background: var(--cabinet);
+  border: 1px solid #3a3131;
+  border-radius: 4px;
+}
+.plaque .bolt {
+  width: 6px;
+  height: 6px;
+  background: var(--red);
+  box-shadow: none;
+}
+.plaque-ghost {
+  font-weight: 600;
+  color: #c9c2c2;
+  background: transparent;
 }
 .hero-lede {
-  max-width: 34rem;
-  margin: 1.4rem 0 2.25rem;
-  font-size: clamp(1.05rem, 1.25vw, 1.2rem);
-  color: #d9d4d2;
+  max-width: 33em;
+  margin: 0;
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  color: #d9d4d4;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.4rem 2.2rem;
+}
+.hero-proof {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  max-width: 22em;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #b9b1b1;
+}
+.hero-proof .spark {
+  flex: none;
+  color: var(--red);
 }
 
 /* ------------------------------------------------------------
@@ -406,8 +473,11 @@ main {
 }
 .about-photo img {
   width: clamp(11rem, 18vw, 15rem);
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: 50% 0%;
+  background: radial-gradient(80% 70% at 50% 35%, rgb(168 16 26 / 0.55) 0%, var(--ink) 75%);
   border-radius: 12px;
   border: 4px solid var(--panel);
   box-shadow:
@@ -1525,29 +1595,10 @@ main {
   }
 }
 
-/* Portrait tablets and phones share the stacked hero */
-@media (max-width: 759px), (max-width: 1024px) and (orientation: portrait) {
-  .hero {
-    min-height: min(max(100svh - var(--bar-h), 560px), 1100px);
-  }
-  .hero-photo img {
-    object-position: 50% 0%;
-  }
-  .hero::before {
-    background: linear-gradient(
-      180deg,
-      rgb(13 12 12 / 0.45) 0%,
-      rgb(13 12 12 / 0) 16%,
-      rgb(13 12 12 / 0.1) 40%,
-      rgb(13 12 12 / 0.85) 64%,
-      var(--ink) 82%
-    );
-  }
-  .hero-name {
-    font-size: min(17vw, 9rem);
-  }
+/* Tablets: tighter columns */
+@media (max-width: 1024px) {
   .hero-inner {
-    padding-bottom: clamp(4rem, 8vh, 6rem);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
   }
 }
 
@@ -1613,12 +1664,10 @@ main {
 
   .hero-lede {
     font-size: 1.02rem;
-    margin: 1.2rem 0 1.9rem;
   }
   .plaque {
-    margin-top: 1.25rem;
     font-size: 0.82rem;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
   }
   .cone {
     --s: 70px;
@@ -1726,40 +1775,34 @@ main {
   }
 }
 
-/* Phones: photo first and fully visible, text below it */
+/* Phones and portrait tablets: photo first, text below it */
 @media (max-width: 759px) {
-  .hero {
-    display: block;
+  .hero-inner {
     min-height: 0;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'photo' 'copy';
+    gap: 0;
   }
-  .hero::before {
-    display: none;
+  .hero {
+    background: radial-gradient(80% 32% at 50% 24%, rgb(168 16 26 / 0.45) 0%, rgb(13 12 12 / 0) 100%), var(--ink);
   }
   .hero-photo {
-    position: relative;
-    display: block;
+    min-height: min(440px, 112vw);
   }
   .hero-photo img {
-    position: relative;
-    inset: auto;
-    z-index: auto;
-    height: auto;
-    aspect-ratio: 900 / 940;
-    object-position: 50% 0%;
+    left: 50%;
+    height: 100%;
+    mask-image: linear-gradient(180deg, #000 55%, transparent 97%);
   }
-  .hero-photo::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgb(13 12 12 / 0) 55%, rgb(13 12 12 / 0.7) 80%, var(--ink) 100%);
+  .hero-globe {
+    left: 50%;
+    min-width: 0;
+    width: 118%;
+    mask-image: linear-gradient(180deg, #000 35%, transparent 66%);
   }
-  .hero-inner {
-    position: relative;
-    margin-top: -3.25rem;
-    padding: 0 0 4rem;
-  }
-  .hero-name {
-    font-size: 16vw;
+  .hero-copy {
+    gap: 1.25rem;
+    padding-block: 0.5rem 4.5rem;
   }
 
   /* About: portrait centered above the copy */

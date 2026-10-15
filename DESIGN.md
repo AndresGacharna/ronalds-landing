@@ -1,5 +1,5 @@
 ---
-name: Ronald Ruiz · Personal trainer
+name: Steven Ruiz · Personal trainer
 description: El Picó. Un personal trainer presentado como picó bogotano, con rótulo geométrico sólido, cabina negra y un cono rojo que abre WhatsApp.
 colors:
   ink: "#0d0c0c"
@@ -117,13 +117,13 @@ components:
     padding: "0.65rem 0.8rem"
 ---
 
-# Design System: Ronald Ruiz · Personal trainer
+# Design System: Steven Ruiz · Personal trainer
 
 ## Overview
 
 **Creative North Star: "El Picó"**
 
-La página es un picó bogotano: una cabina negra que retumba, el nombre del dueño en mayúsculas geométricas enormes (RONALD en hueso, RUIZ en rojo sólido), títulos de campeón atornillados como placas y un cono de parlante que late como un bajo. Todo el sistema sale de ese objeto. Las superficies son negro de cabina con relieve de hardware (bordes finos, brillo interior de 1px, sombras largas y difusas). El rótulo en cambio es sobrio: tinta plana, sin cromo, sin extrusión, sin degradados. El único color caliente es el rojo del nombre y de la acción de WhatsApp.
+La página es un picó bogotano: una cabina negra que retumba, el nombre del dueño en mayúsculas geométricas enormes (STEVEN en hueso, RUIZ en rojo sólido), títulos de campeón atornillados como placas y un cono de parlante que late como un bajo. Todo el sistema sale de ese objeto. Las superficies son negro de cabina con relieve de hardware (bordes finos, brillo interior de 1px, sombras largas y difusas). El rótulo en cambio es sobrio: tinta plana, sin cromo, sin extrusión, sin degradados. El único color caliente es el rojo del nombre y de la acción de WhatsApp.
 
 La densidad es de cartel, no de dashboard: pocas piezas grandes por pantalla, titulares en Adventor bold en mayúsculas apretadas, lectura en Barlow a buen tamaño y todo lo demás en etiquetas condensadas espaciadas. El movimiento es parte del material: el nombre se revela una vez al cargar con un barrido de izquierda a derecha, el cono late en ciclo de bajo y la franja de lemas corre como marquesina.
 
@@ -166,7 +166,7 @@ Negro de cabina casi neutro con un leve tinte cálido, hueso frío para el texto
 **Character:** Adventor bold es geometría de rótulo sin adornos, círculos llenos y mayúsculas apretadas; Barlow es la voz cercana que explica; Barlow Condensed rotula como las serigrafías de un equipo de sonido.
 
 ### Hierarchy
-- **Display** (Adventor 700, min(9rem, 8.4vw) en escritorio y 17vw en móvil, line-height 0.9, tracking -0.02em, mayúsculas): solo el nombre, en dos líneas; RONALD en hueso y RUIZ en rojo, tinta plana.
+- **Display** (Adventor 700, min(9rem, 8.4vw) en escritorio y 17vw en móvil, line-height 0.9, tracking -0.02em, mayúsculas): solo el nombre, en dos líneas; STEVEN en hueso y RUIZ en rojo, tinta plana.
 - **Headline** (Adventor 700, clamp(2rem, 4.4vw, 3.5rem), 1.02, tracking -0.02em, mayúsculas): títulos de sección en hueso. El titular de cierre sube a clamp(2.6rem, 8.5vw, 7rem), también hueso plano.
 - **Title** (Adventor 700, clamp(1.6rem, 2.6vw, 2.2rem), 1.05, tracking -0.02em, mayúsculas): nombres de plan; los títulos de logro usan 1.85rem. Los lemas de la franja abren el tracking a +0.02em; el monograma RR lo cierra a -0.03em.
 - **Body** (Barlow 400, 1.0625rem, 1.6): lectura, con medidas de 34rem en el lede, 60ch en quién soy y 40 a 46ch en textos laterales.
@@ -235,7 +235,7 @@ Un parlante que late. Círculo de 84px (118px en la versión xl, 72/96px en móv
 ### Inputs / Fields
 - **Style:** campo del chat en #221e1e con borde 1px #3a3434, radio 14px, texto hueso, cursor rojo.
 - **Focus:** el borde pasa a rojo, sin contorno extra (el campo pertenece a la acción de WhatsApp).
-- **Disabled:** el botón de enviar baja a 45% de opacidad mientras Ronald "escribe".
+- **Disabled:** el botón de enviar baja a 45% de opacidad mientras Steven "escribe".
 
 ### Navigation
 Barra absoluta sobre el hero, sin fondo: monograma RR en Adventor 700 hueso (tracking -0.03em) a la izquierda, enlaces en Barlow Condensed 600 0.95rem, tracking 0.14em, mayúsculas, gris claro que pasa a blanco con subrayado de 2px en hover; botón rojo de WhatsApp a la derecha. En móvil los enlaces se ocultan y quedan monograma y botón.
