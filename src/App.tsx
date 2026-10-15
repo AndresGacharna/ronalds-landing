@@ -17,7 +17,7 @@ const SLOGANS = [
 ]
 
 const TITLES = [
-  { big: 'Top 1', small: 'en venta de planes personalizados en planta' },
+  { big: 'Top 1', small: 'en servicio de entrenamiento personalizado' },
   { big: '+6 años', small: 'entrenando personas en deportes y gimnasio' },
   { big: 'Cuerpo + mente', small: 'hábitos, disciplina y confianza que se quedan contigo' },
 ]

@@ -4,8 +4,8 @@ import { ArrowIcon, CloseIcon } from './icons'
 const DISMISS_KEY = 'aetha-bubble-dismissed'
 
 const COPY = {
-  default: 'Proteína, creatina y pre-entrenos con asesoría real.',
-  tools: '¿Ya sacaste tu proteína? Encuéntrala en AETHA.',
+  default: { long: 'Proteína, creatina y pre-entrenos con asesoría real.', short: 'Suplementos con asesoría' },
+  tools: { long: '¿Ya sacaste tu proteína? Encuéntrala en AETHA.', short: 'Tu proteína, aquí' },
 }
 
 function wasDismissed() {
@@ -65,7 +65,8 @@ export function AethaBubble({ url, hidden = false }: Props) {
       <a className="aetha-bubble-link" href={url} target="_blank" rel="noopener sponsored">
         <span className="aetha-bubble-tag">Aliado</span>
         <img src="/images/aetha/aetha-logo-light.png" alt="AETHA" width="486" height="115" />
-        <span className="aetha-bubble-text">{inTools ? COPY.tools : COPY.default}</span>
+        <span className="aetha-bubble-text">{(inTools ? COPY.tools : COPY.default).long}</span>
+        <span className="aetha-bubble-short">{(inTools ? COPY.tools : COPY.default).short}</span>
         <span className="aetha-bubble-cta">
           <span>Ver tienda</span>
           <ArrowIcon />
